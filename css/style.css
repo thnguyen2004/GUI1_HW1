@@ -1,0 +1,155 @@
+/* 
+File: style.css
+GUI Assignment: Styles all three pages for my website about running. Handles things such as font, structure using flex, background image, shadows, etc.
+Thomas Nguyen, UMass Lowell Computer Science, Thomas_Nguyen3@student.uml.edu
+Copyright (c) 2025 by Nguyen. All rights reserved. May be freely copied or 
+excerpted for educational purposes with credit to the author.
+updated by TN on September 5, 2025 at 10:05pm
+*/
+
+
+/* Removes margin in order to have the header fill in the entire window */
+body {
+    margin: 0;
+    background-color: rgb(239, 239, 239);
+}
+
+/* Styles the cursive name in the header */
+h1 {
+    font-family: "Brush Script MT", cursive;
+    padding-left: 17px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px rgb(90, 90, 90);
+}
+
+/* Styles header, makes the header stay at the top even when scrolling down */
+header {
+    background-color: #e0840b;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Structures the links in the header to be side by side */
+.links {
+    display: flex;
+    flex-direction: row;
+    padding-right: 17px;
+}
+
+/* Styles the links in the header */
+header a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding-inline: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Adds underline to the links in the header when hovering over */
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Background image on home screen, image comes from: https://wallpapers.com/running */
+.image {
+    width: 100%;
+    height: 750px;
+    background-image: url("../images/running.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px 5px #c6c6c6;
+}
+
+/* Styles title that lays on top of the background image on home screen */
+.image p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(90, 90, 90);
+}
+
+/* Structures the reading sections on all three pages */
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Styles the left and right reading sections */
+.left,
+.right {
+    width: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    overflow-x: auto;
+    margin: 60px;
+    background-color: white;
+    box-shadow: 0 0 5px 5px #c6c6c6;
+    border-radius: 10px;
+}
+
+/* Font size of reading section headers on all 3 pages */
+.left h2,
+.right h2 {
+    font-size: 40px;
+}
+
+/* Font size and padding for reading sections on all 3 pages */
+.left p,
+.right p {
+    font-size: 25px;
+    padding: 20px;
+}
+
+/* Width for HR image on journey screen */
+.HRImg {
+    width: 100%;
+}
+
+/* Width for shoe image on purchases screen */
+.shoeImg {
+    width: 60%;
+}
+
+/* Width for both GIFs on journey screen */
+.gifImg {
+    width: 30%;
+}
+
+/* Styles table in purchases screen */
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Styles the cols in the table */
+td {
+  border: 1px solid #cecece;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Font size for table text */
+tr {
+    font-size: 25px;
+}
+
+/* Alternates row color in table */
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
